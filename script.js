@@ -1,5 +1,7 @@
 function minDate(dates) {
   //write you code here
+	dates.sort((a,b)=>{return new Date(a)-new Date(b)});
+	return dates[0];
 }
 
 // Do not change the code
@@ -36,5 +38,7 @@ var dates = [
   "2023/03/29",
   "2023/03/30",
 ];
-
+ 
 alert(minDate(dates));
+
+
